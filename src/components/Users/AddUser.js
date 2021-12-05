@@ -1,6 +1,10 @@
 import React from 'react';
 
+// -------------- Components --------------
 import Card from '../UI/Card';
+
+// ---------------- Styling ----------------
+import styles from './AddUser.module.css';
 
 const AddUser = (props) => {
   const addUserHandler = (event) => {
@@ -8,7 +12,7 @@ const AddUser = (props) => {
   };
 
   return (
-    <Card>
+    <Card className={styles.input}>
       <form onSubmit={addUserHandler}>
         <label htmlFor='username'>Username</label>
         <input id='username' type='text' name='username' />
